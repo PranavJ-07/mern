@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Azure Static Website</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f7fb;
+            color: #333;
+        }
+
+        header {
+            background-color: #2563eb;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #1e40af;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 16px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        .hero h1 {
+            font-size: 42px;
+            color: #1e3a8a;
+        }
+
+        .hero p {
+            font-size: 18px;
+            max-width: 700px;
+            margin: auto;
+            line-height: 1.6;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 25px;
+            padding: 12px 25px;
+            background-color: #2563eb;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .btn:hover {
+            background-color: #1d4ed8;
+        }
+
+        .features {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 40px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background: white;
+            width: 280px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 2px 8px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .card h3 {
+            color: #2563eb;
+        }
+
+        footer {
+            background-color: #1e40af;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h2>Azure Cloud Deployment</h2>
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Services</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <section class="hero">
+        <h1>Static Website Hosted on Azure VM</h1>
+
+        <p>
+            This website is deployed on a Microsoft Azure Virtual Machine
+            using the Nginx web server. The website is publicly accessible
+            through the VM's public IP address and can be remotely updated
+            using SSH connectivity.
+        </p>
+
+        <a href="#" class="btn">Learn More</a>
+    </section>
+
+    <section class="features">
+
+        <div class="card">
+            <h3>Cloud Hosting</h3>
+            <p>
+                Hosted on Azure Linux Virtual Machine with secure access.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Nginx Server</h3>
+            <p>
+                Static website served efficiently using Nginx web server.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Remote Updates</h3>
+            <p>
+                Website files can be updated remotely using SSH and SCP.
+            </p>
+        </div>
+
+    </section>
+
+    <footer>
+        <p>© 2026 Azure Static Website Project</p>
+    </footer>
+
+</body>
+</html>
